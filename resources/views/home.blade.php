@@ -34,6 +34,10 @@
                 <h2>Make your potion!</h2>
                 <img src="{{asset('img/cauldron.gif')}}" alt="cauldron" class="cauldron"/>
                 <button class="button">Brew potion!</button>
+                <div class="container">
+                    <div class="currentPotionList">
+                    </div>
+                </div>
             </div>
 
             <div class="col3">

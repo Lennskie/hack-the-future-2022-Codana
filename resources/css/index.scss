@@ -57,6 +57,24 @@ main{
 
             }
 
+            .container{
+
+                img{
+                    height: 20px;
+                    width: 2Opx;
+                }
+
+                display: inline;
+
+                .currentPotionList{
+                    display: grid;
+                    grid-template-columns: repeat(10, 1fr);
+                    grid-template-rows: 1fr;
+                    column-gap: 10%;
+                }
+            }
+
+
         }
 
         .col1, .col3{

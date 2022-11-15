@@ -53,18 +53,27 @@ main .container .col1 div, main .container .col3 div {
   row-gap: 1%;
   column-gap: 1%;
 }
-main .container .col1 div div, main .container .col3 div div {
+main .container .col1 div a, main .container .col3 div a {
   border: 2px solid red;
+  text-decoration: none;
+}
+main .container .col1 div a div, main .container .col3 div a div {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .container .col1 div div img, main .container .col3 div div img {
+main .container .col1 div a div img, main .container .col3 div a div img {
   height: 50px;
   width: 50px;
 }
-main .container .col1 div div:hover, main .container .col3 div div:hover {
+main .container .col1 div a:hover, main .container .col3 div a:hover {
+  border: 3px solid green;
+}
+main .container .col1 div a:active, main .container .col3 div a:active {
+  border: 4px solid green;
+}
+main .container .col1 div a:hover::after, main .container .col3 div a:hover::after {
   border: 4px solid green;
 }
 

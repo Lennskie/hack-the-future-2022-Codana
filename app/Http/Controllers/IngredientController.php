@@ -6,5 +6,11 @@ namespace App\Http\Controllers;
 
 class IngredientController extends Controller
 {
-    //TODO: ADD INGREDIENT LOGIC
+    public function addIngredient(Request $request){
+
+    }
+
+    public function getIngredients(){
+        return Ingredient::all();
+    }
 }

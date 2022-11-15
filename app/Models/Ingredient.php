@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Potion extends Model
+class Ingredient extends Model
 {
     use HasFactory;
 
-    public function ingredients()
+    public function potion()
     {
-        return $this->hasMany(Ingredient::class);
+        return $this->belongsTo(Potion::class);
     }
 }

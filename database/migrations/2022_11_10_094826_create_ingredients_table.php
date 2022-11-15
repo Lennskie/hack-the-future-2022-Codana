@@ -15,7 +15,9 @@ return new class extends Migration
     {
         Schema::create('ingredients', function (Blueprint $table) {
             $table->id();
-            //TODO: ADD PROPERTIES
+            $table->string('name');
+            $table->string('description');
+            $table->int('score');
             $table->timestamps();
         });
     }

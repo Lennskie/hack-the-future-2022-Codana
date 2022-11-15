@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/reset.css')}}">
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <script src="{{asset('js/index.js')}}"></script>
     <title>Department of Variety Gaming - Hack The Future 2022</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
                 <h2>Ingredients!</h2>
                 <div>
                     @foreach($ingredients as $ingredient)
-                        <a href="#">
+                        <a href="#" class="clickable-ingredient" item-id="{{$ingredient['id']}}" item-name="{{$ingredient['name']}}">
                             <div>
                                 <p>{{$ingredient['name']}}</p>
                                 <img src="{{ asset('img/' . $ingredient['name'] . '.png') }}" alt="{{$ingredient['name']}}" class="{{$ingredient['name']}}">
@@ -32,7 +33,7 @@
             <div class="col2">
                 <h2>Make your potion!</h2>
                 <img src="{{asset('img/cauldron.gif')}}" alt="cauldron" class="cauldron"/>
-                <button class=button>Add to potion!</button>
+                <button class="button">Brew potion!</button>
             </div>
 
             <div class="col3">

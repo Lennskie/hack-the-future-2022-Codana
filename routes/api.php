@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PotionController;
+use App\Http\Controllers\IngredientController;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
+Route::get('/test', [TestController::class, 'test']);
 Route::get('/ingredients', [IngredientController::class, 'getIngredients']);
 Route::post('/ingredients', [IngredientController::class, 'addIngredient']);

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
-            $table->int('required_score');
+            $table->integer('required_score');
             $table->timestamps();
         });
     }

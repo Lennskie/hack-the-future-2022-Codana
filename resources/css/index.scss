@@ -74,27 +74,39 @@ main{
                 row-gap: 1%;
                 column-gap: 1%;
 
-                div{
-
+                a{
                     border: 2px solid red;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items:center;
+                    text-decoration: none;
 
-                    img{
+                    div{
 
-                        height: 50px;
-                        width: 50px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items:center;
 
+                        img{
+
+                            height: 50px;
+                            width: 50px;
+
+                        }
                     }
                 }
 
-                div:hover {
-
-                    border: 4px solid green;
+                a:hover {
+                    border: 3px solid green;
 
                 }
+
+                a:active{
+                    border: 4px solid green;
+                }
+
+                a:hover::after{
+                    border: 4px solid green;
+                }
+
             }
         }
     }

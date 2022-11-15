@@ -19,10 +19,12 @@
                 <h2>Ingredients!</h2>
                 <div>
                     @foreach($ingredients as $ingredient)
-                        <div>
-                            <p>{{$ingredient['name']}}</p>
-                            <img src="{{ asset('img/' . $ingredient['name'] . '.png') }}" alt="{{$ingredient['name']}}" class="{{$ingredient['name']}}">
-                        </div>
+                        <a href="#">
+                            <div>
+                                <p>{{$ingredient['name']}}</p>
+                                <img src="{{ asset('img/' . $ingredient['name'] . '.png') }}" alt="{{$ingredient['name']}}" class="{{$ingredient['name']}}">
+                            </div>
+                        </a>
                     @endforeach
                 </div>
             </div>
@@ -37,10 +39,12 @@
                 <h2>Brewed potions</h2>
                 <div>
                     @foreach($ingredients as $ingredient)
-                        <div>
-                            <p>{{$ingredient['name']}}</p>
-                            <img src="{{asset('img/flask-1.png')}}" class="">
-                        </div>
+                        <a href="#">
+                            <div>
+                                <p>{{$ingredient['name']}}</p>
+                                <img src="{{asset('img/flask-1.png')}}" class="">
+                            </div>
+                        </a>
                     @endforeach
                 </div> {{--change this with potions--}}
 

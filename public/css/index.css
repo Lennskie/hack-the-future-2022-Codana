@@ -40,6 +40,19 @@ main .container .col2 button {
   margin-left: auto;
   margin-right: auto;
 }
+main .container .col2 .container {
+  display: inline;
+}
+main .container .col2 .container img {
+  height: 20px;
+  width: 2Opx;
+}
+main .container .col2 .container .currentPotionList {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 10%;
+}
 main .container .col1, main .container .col3 {
   text-align: center;
   width: 33%;

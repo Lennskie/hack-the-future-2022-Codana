@@ -42,17 +42,16 @@
 
             <div class="col3">
                 <h2>Brewed potions</h2>
-                <div>
+                <div class="brewedPotions">
                     @foreach($potions as $potion)
-                        <a href="#" >
+                        <a href="#" item-id="{{$potion['id']}}" item-name="{{$potion['description']}}">
                             <div>
                                 <p>{{$potion['name']}}</p>
                                 <img src="{{ asset('img/' . $potion['description'] . '.png') }}" class="">
                             </div>
                         </a>
                     @endforeach
-                </div> {{--change this with potions--}}
-
+                </div>
             </div>
         </div>
     </main>

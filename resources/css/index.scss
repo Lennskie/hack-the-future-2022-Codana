@@ -48,14 +48,14 @@ main{
 
             text-align: center;
 
-            button{
+            .button{
                 //make an animated button on hover
                 background-color: #4CAF50;
                 display: none;
                 margin-left: auto;
                 margin-right: auto;
-
-            }
+                animation: glowing 1300ms infinite;
+              }
 
             .container{
 
@@ -127,5 +127,20 @@ main{
 
             }
         }
+    }
+}
+
+@keyframes glowing {
+    0% {
+      background-color: hwb(42 47% 5%);
+      box-shadow: 0 0 5px hwb(42 47% 5%);
+    }
+    50% {
+      background-color: hwb(30 16% 9%);
+      box-shadow: 0 0 20px hwb(30 16% 9%);
+    }
+    100% {
+        background-color: hwb(42 47% 5%);
+        box-shadow: 0 0 5px hwb(42 47% 5%);
     }
 }

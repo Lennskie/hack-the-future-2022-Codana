@@ -17,6 +17,7 @@ class IngredientController extends Controller
         $ingredient->description = $validated['description'];
         $ingredient->score = rand(1,4);
         $ingredient->save();
+        return $ingredient;
     }
 
     public function getIngredients(){

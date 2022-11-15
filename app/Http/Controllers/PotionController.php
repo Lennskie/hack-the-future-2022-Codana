@@ -22,7 +22,7 @@ class PotionController extends Controller
         $ingredients = $validated['ingredients'];
         $brew_score = 0;
         foreach($ingredients as $ingredient){
-            $brew_score += $ingredient['score'];
+            $brew_score = $brew_score + Ingredient::where('id', $ingredient['id'])->first()->score;
         }
         $recipes = Recipe::all();
         foreach($recipes as $recipe){
@@ -34,6 +34,6 @@ class PotionController extends Controller
                 return $potion;
             }
         }
-
+        return response()->json("That's not a corrent recipe!", 400);
     }
 }

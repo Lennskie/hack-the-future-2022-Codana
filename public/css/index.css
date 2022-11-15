@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-h1 {
+header h1 {
   text-align: center;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
 }
-
-.wizard {
+header .wizard {
   height: 10%;
   width: 10%;
   display: block;
@@ -12,37 +12,50 @@ h1 {
   margin-right: auto;
 }
 
-.cauldron {
+main .cauldron {
   height: 20%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-.container {
+main .container {
   display: flex;
 }
-.container .col2 {
+main .container h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+main .container .col2 {
   text-align: center;
 }
-.container .col1, .container .col3 {
+main .container .col2 button {
+  background-color: #4CAF50;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .container .col1, main .container .col3 {
   text-align: center;
   width: 33%;
   float: left;
   border: 1px solid black;
 }
-.container .col1 ul, .container .col3 ul {
+main .container .col1 ul, main .container .col3 ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.container .col1 ul li, .container .col3 ul li {
-  border: 1px solid red;
+main .container .col1 ul li, main .container .col3 ul li {
+  border: 2px solid red;
   height: 100%;
 }
-.container .col1 ul li img, .container .col3 ul li img {
+main .container .col1 ul li img, main .container .col3 ul li img {
   height: 50px;
   width: 50px;
+}
+main .container .col1 ul li:hover, main .container .col3 ul li:hover {
+  border: 2px solid green;
 }
 
 /*# sourceMappingURL=index.css.map */

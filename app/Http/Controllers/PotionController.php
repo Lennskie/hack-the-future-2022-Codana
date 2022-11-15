@@ -15,10 +15,7 @@ class PotionController extends Controller
     }
 
     public function createPotion(Request $request){
-
         $ingredients = $request['ingredients'];
-        return $ingredients;
-        return response()->json(["ingredients"=>$ingredients]);
         $brew_score = 0;
         foreach($ingredients as $ingredient){
             if($ingredient['is_potion']) {

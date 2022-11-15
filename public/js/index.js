@@ -89,14 +89,18 @@ async function brewPotion(){
     api = api.slice(0, -2);
     const data = await fetch(`http://htf2022.local/api/potions/create`,{
         method:"post",
+        headers:{
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify({
             "ingredients": ingredients
         })
     })
-    console.log(data);
     if(data.status === 200){
-        console.log("good");
+        location.reload();
     }
-    let res = await data.json();
-    console.log(res);
+    if(data.status === 400){
+        alert("no rizz");
+    }
+
 }

@@ -15,15 +15,15 @@ class IngredientSeeder extends Seeder
      */
     public function run()
     {
-        DB::insert("insert into ingredients (name, description, score) values ('Basil', 'test', 1)");
-        DB::insert("insert into ingredients (name, description, score) values ('Chives', 'test', 2)");
-        DB::insert("insert into ingredients (name, description, score) values ('Flask', 'test', 3)");
-        DB::insert("insert into ingredients (name, description, score) values ('Lavender', 'test', 2)");
-        DB::insert("insert into ingredients (name, description, score) values ('Oregano', 'test', 4)");
-        DB::insert("insert into ingredients (name, description, score) values ('Rosemary', 'test', 1)");
-        DB::insert("insert into ingredients (name, description, score) values ('Sage', 'test', 2)");
-        DB::insert("insert into ingredients (name, description, score) values ('Wands', 'test', 1)");
-        DB::insert("insert into ingredients (name, description, score) values ('Specialties', 'test', 3)");
+        DB::insert("insert into ingredients (name, description, score) values ('basil', 'test', 1)");
+        DB::insert("insert into ingredients (name, description, score) values ('chives', 'test', 2)");
+        DB::insert("insert into ingredients (name, description, score) values ('flask-1', 'test', 3)");
+        DB::insert("insert into ingredients (name, description, score) values ('lavender', 'test', 2)");
+        DB::insert("insert into ingredients (name, description, score) values ('oregano', 'test', 4)");
+        DB::insert("insert into ingredients (name, description, score) values ('rosemary', 'test', 1)");
+        DB::insert("insert into ingredients (name, description, score) values ('sage', 'test', 2)");
+        DB::insert("insert into ingredients (name, description, score) values ('wands', 'test', 1)");
+        DB::insert("insert into ingredients (name, description, score) values ('potions', 'test', 3)");
 
     }
 }

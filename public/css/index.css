@@ -18,44 +18,8 @@ main .cauldron {
   margin-left: auto;
   margin-right: auto;
 }
-main .container {
-  display: flex;
-}
-main .container h2 {
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-}
-main .container .col2 {
-  text-align: center;
-}
-main .container .col2 button {
-  background-color: #4CAF50;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-main .container .col1, main .container .col3 {
-  text-align: center;
-  width: 33%;
-  float: left;
-  border: 1px solid black;
-}
-main .container .col1 ul, main .container .col3 ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-main .container .col1 ul li, main .container .col3 ul li {
-  border: 2px solid red;
-  height: 100%;
-}
-main .container .col1 ul li img, main .container .col3 ul li img {
-  height: 50px;
-  width: 50px;
-}
-main .container .col1 ul li:hover, main .container .col3 ul li:hover {
-  border: 2px solid green;
+main div img {
+  width: 10vw;
 }
 
 /*# sourceMappingURL=index.css.map */

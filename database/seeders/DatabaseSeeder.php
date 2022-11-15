@@ -20,6 +20,6 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        $this->call([IngredientSeeder::class]);
+        $this->call([IngredientSeeder::class, RecipeSeeder::class]);
     }
 }

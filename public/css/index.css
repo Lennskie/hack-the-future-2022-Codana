@@ -22,22 +22,25 @@ h1 {
 .container {
   display: flex;
 }
-.container .col {
+.container .col2 {
+  text-align: center;
+}
+.container .col1, .container .col3 {
   text-align: center;
   width: 33%;
   float: left;
   border: 1px solid black;
 }
-.container .col ul {
+.container .col1 ul, .container .col3 ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.container .col ul li {
+.container .col1 ul li, .container .col3 ul li {
   border: 1px solid red;
   height: 100%;
 }
-.container .col ul li img {
+.container .col1 ul li img, .container .col3 ul li img {
   height: 50px;
   width: 50px;
 }

@@ -44,8 +44,8 @@ main .container .col2 .container {
   display: inline;
 }
 main .container .col2 .container img {
-  height: 20px;
-  width: 2Opx;
+  height: 50px;
+  width: 40px;
 }
 main .container .col2 .container .currentPotionList {
   display: grid;

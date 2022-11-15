@@ -43,11 +43,11 @@
             <div class="col3">
                 <h2>Brewed potions</h2>
                 <div>
-                    @foreach($ingredients as $ingredient)
-                        <a href="#">
+                    @foreach($potions as $potion)
+                        <a href="#" >
                             <div>
-                                <p>{{$ingredient['name']}}</p>
-                                <img src="{{asset('img/flask-1.png')}}" class="">
+                                <p>{{$potion['name']}}</p>
+                                <img src="{{ asset('img/' . $potion['description'] . '.png') }}" class="">
                             </div>
                         </a>
                     @endforeach

@@ -22,14 +22,19 @@ class PotionController extends Controller
         $ingredients = $validated['ingredients'];
         $brew_score = 0;
         foreach($ingredients as $ingredient){
-            $brew_score = $brew_score + Ingredient::where('id', $ingredient['id'])->first()->score;
+            if($ingredient['is_potion']) {
+                $brew_score = $brew_score + Potion::where('id', $ingredient['id'])->first()->score;
+            }else{
+                $brew_score = $brew_score + Ingredient::where('id', $ingredient['id'])->first()->score;
+            }
         }
         $recipes = Recipe::all();
         foreach($recipes as $recipe){
             if($recipe['required_score'] == $brew_score){
                 $potion = new Potion();
                 $potion->name = $recipe['name'];
-                $potion->description = "";
+                $potion->description = $recipe['image_description'];
+                $potion->score = $brew_score;
                 $potion->save();
                 return $potion;
             }

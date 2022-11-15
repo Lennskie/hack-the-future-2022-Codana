@@ -23,7 +23,7 @@ class IngredientSeeder extends Seeder
         DB::insert("insert into ingredients (name, description, score) values ('rosemary', 'test', 1)");
         DB::insert("insert into ingredients (name, description, score) values ('sage', 'test', 2)");
         DB::insert("insert into ingredients (name, description, score) values ('wands', 'test', 1)");
-        DB::insert("insert into ingredients (name, description, score) values ('potions', 'test', 3)");
+        DB::insert("insert into ingredients (name, description, score) values ('spices', 'test', 3)");
 
     }
 }

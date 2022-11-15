@@ -26,6 +26,7 @@ function addIngredientToCauldron(e){
 function checkIngredients(){
     if(ingredients.length > 0){
         document.querySelector(".button").style = "display: block";
+        document.querySelector(".button").addEventListener("click", brewPotion);
     }else{
         document.querySelector('.button').style = "display: none";
     }
@@ -42,6 +43,7 @@ function updateGui(){
     document.querySelectorAll('.brewedPotions a').forEach(elem => {
         elem.addEventListener("click", removePotion);
     });
+    checkIngredients();
 }
 
 function removeIngredient(e){
@@ -74,4 +76,27 @@ function addPotionToCauldron(e){
     ingredients.push(ingredient);
     checkIngredients();
     updateGui();
+}
+
+
+async function brewPotion(){
+    ingredients.forEach(elem => {
+        if(elem.name.includes("potion")){
+            elem.is_potion = true;
+        }
+    })
+    let api = window.location.href;
+    api = api.slice(0, -2);
+    const data = await fetch(`http://htf2022.local/api/potions/create`,{
+        method:"post",
+        body: JSON.stringify({
+            "ingredients": ingredients
+        })
+    })
+    console.log(data);
+    if(data.status === 200){
+        console.log("good");
+    }
+    let res = await data.json();
+    console.log(res);
 }

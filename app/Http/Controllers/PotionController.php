@@ -15,11 +15,10 @@ class PotionController extends Controller
     }
 
     public function createPotion(Request $request){
-        $validated = $request->validate([
-            'ingredients' => 'required|array',
-        ]);
 
-        $ingredients = $validated['ingredients'];
+        $ingredients = $request['ingredients'];
+        return $ingredients;
+        return response()->json(["ingredients"=>$ingredients]);
         $brew_score = 0;
         foreach($ingredients as $ingredient){
             if($ingredient['is_potion']) {
@@ -36,9 +35,9 @@ class PotionController extends Controller
                 $potion->description = $recipe['image_description'];
                 $potion->score = $brew_score;
                 $potion->save();
-                return $potion;
+                return response()->json(["potion" => $potion]);
             }
         }
-        return response()->json("That's not a corrent recipe!", 400);
+        return response()->json(["error"=> "could not make potion"], 400);
     }
 }

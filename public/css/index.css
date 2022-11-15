@@ -1,9 +1,9 @@
 /* Error: expected "}".
  *    ,
- * 95 | }
+ * 96 | }
  *    |  ^
  *    '
- *   resources\css\index.scss 95:2  root stylesheet */
+ *   resources/css/index.scss 96:2  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 95 \2502  }\a    \2502   ^\a    \2575 \a   resources\\css\\index.scss 95:2  root stylesheet';
+  content: 'Error: expected "}".\a    \2577 \a 96 \2502  }\a    \2502   ^\a    \2575 \a   resources/css/index.scss 96:2  root stylesheet';
 }

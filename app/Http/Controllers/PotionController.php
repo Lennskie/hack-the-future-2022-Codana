@@ -26,7 +26,13 @@ class PotionController extends Controller
         }
         $recipes = Recipe::all();
         foreach($recipes as $recipe){
-
+            if($recipe['required_score'] == $brew_score){
+                $potion = new Potion();
+                $potion->name = $recipe['name'];
+                $potion->description = "";
+                $potion->save();
+                return $potion;
+            }
         }
 
     }

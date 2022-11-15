@@ -15,6 +15,7 @@
         <img src="{{asset('img/wizard-mage.gif')}}" alt="wizard-gif" class="wizard"/>
     </header>
     <main>
+        <div class=explosion></div>
         <div class="container">
             <div class="col1">
                 <h2>Ingredients!</h2>

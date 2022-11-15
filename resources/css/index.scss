@@ -18,6 +18,13 @@ header{
 
 main{
 
+    .explosion{
+       background-color: red;
+       height: 100%;
+       width: 100%;
+       animation: explosion 2s ease-in-out;
+    }
+
     .cauldron{
         height: 50%;
         width: 50%;
@@ -142,5 +149,23 @@ main{
     100% {
         background-color: hwb(42 47% 5%);
         box-shadow: 0 0 5px hwb(42 47% 5%);
+    }
+}
+
+
+@keyframes explosion{
+    0% {
+        z-index: 100;
+        background-color: red;
+      }
+    33% {
+        background-color: white;
+      }
+    66% {
+          background-color: red;
+      }
+    100% {
+        background-color: white;
+        z-index: -1;
     }
 }

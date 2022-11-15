@@ -100,7 +100,21 @@ async function brewPotion(){
         location.reload();
     }
     if(data.status === 400){
-        alert("no rizz");
+        await showExplosion();
     }
 
 }
+
+async function showExplosion(){
+    let api = window.location.href;
+    api = api.slice(0, -2);
+    document.querySelector(".cauldron").src = `/img/explosion.gif`;
+    await sleep(2000);
+    location.reload();
+
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+
 header{
     h1{
+        padding: 2rem 0 ;
         text-align: center;
         font-family: 'Inter', sans-serif;
         font-size: 50px;
@@ -17,6 +19,15 @@ header{
 
 
 main{
+    box-sizing: border-box;
+    padding: 2rem;
+
+    .brewedPotions{
+        height: fit-content !important;
+    }
+    .col1, .col3{
+        height: 100%;
+    }
 
     .cauldron{
         height: 50%;
@@ -31,7 +42,6 @@ main{
         display: flex;
 
         .col1, .col2, .col3{
-            height: fit-content;
             padding: 2%
         }
 
@@ -82,7 +92,8 @@ main{
             text-align: center;
             width: 33%;
             float: left;
-            border:1px solid black;
+            border:5px solid black;
+            border-radius: 8px;
 
             div{
 
@@ -93,7 +104,10 @@ main{
                 column-gap: 1%;
 
                 a{
-                    border: 2px solid red;
+                    border: 2px solid black;
+                    display:block;
+                    box-sizing: border-box;
+                    padding: 1rem;
                     text-decoration: none;
 
                     div{

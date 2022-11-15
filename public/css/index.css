@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 header h1 {
+  padding: 2rem 0;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 50px;
@@ -12,6 +13,16 @@ header .wizard {
   margin-right: auto;
 }
 
+main {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+main .brewedPotions {
+  height: fit-content !important;
+}
+main .col1, main .col3 {
+  height: 100%;
+}
 main .cauldron {
   height: 50%;
   width: 50%;
@@ -22,7 +33,6 @@ main .container {
   display: flex;
 }
 main .container .col1, main .container .col2, main .container .col3 {
-  height: fit-content;
   padding: 2%;
 }
 main .container h2 {
@@ -58,7 +68,8 @@ main .container .col1, main .container .col3 {
   text-align: center;
   width: 33%;
   float: left;
-  border: 1px solid black;
+  border: 5px solid black;
+  border-radius: 8px;
 }
 main .container .col1 div, main .container .col3 div {
   display: grid;
@@ -68,7 +79,10 @@ main .container .col1 div, main .container .col3 div {
   column-gap: 1%;
 }
 main .container .col1 div a, main .container .col3 div a {
-  border: 2px solid red;
+  border: 2px solid black;
+  display: block;
+  box-sizing: border-box;
+  padding: 1rem;
   text-decoration: none;
 }
 main .container .col1 div a div, main .container .col3 div a div {

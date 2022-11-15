@@ -5,10 +5,6 @@ h1{
     font-family: 'Inter';
 }
 
-.container{
-    display: flex;
-}
-
 .wizard{
     height: 10%;
     width: 10%;
@@ -17,9 +13,33 @@ h1{
     margin-right: auto;
 }
 
-.col{
-    text-align: center;
-    width: 33%;
-    float: left;
-    border:1px solid black;
+.container{
+    
+    display: flex;
+
+    .col{
+
+        text-align: center;
+        width: 33%;
+        float: left;
+        border:1px solid black;
+
+        ul{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            li{
+
+                border: 1px solid red;
+                height: 100%;
+
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
+    }
 }

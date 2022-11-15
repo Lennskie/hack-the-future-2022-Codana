@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Welcome to the potion hub!</h1>
-        <img src="{{asset('img/wizard-mage.gif')}}" alt="wizard-gif" class="wizard">
+        <img src="{{asset('img/wizard-mage.gif')}}" alt="wizard-gif" class="wizard"/>
     </header>
     <main>
         <div class="container">
@@ -19,6 +19,15 @@
                 <h2>Ingredients!</h2>
                 <div>
                     <ul>
+                        <li class="row1">Basil <img src="{{asset('img/basil.png')}}" alt="basil" class="basil"/></li>
+                        <li class="row1">Chives <img src="{{asset('img/chives.png')}}" alt="chives" class="chives"/></li>
+                        <li class="row1">Flask <img src="{{asset('img/flask-1.png')}}" alt="flask" class="flask"/></li>
+                        <li class="row2">Lavender <img src="{{asset('img/lavender.png')}}" alt="lavender" class="lavender"/></li>
+                        <li class="row2">Oregano <img src="{{asset('img/oregano.png')}}" alt="oregano" class="oregano"/></li>
+                        <li class="row2">Rosemary <img src="{{asset('img/rosemary.png')}}" alt="rosemary" class="rosemary"/></li>
+                        <li class="row3">Sage <img src="{{asset('img/sage.png')}}" alt="sage" class="sage"/></li>
+                        <li class="row3">Wands <img src="{{asset('img/wands.png')}}" alt="wands" class="wands"/></li>
+                        <li class="row3">Specialities <img src="{{asset('img/potions.png')}}" alt="potions" class="potions"/></li>
                         {{-- @foreach ($ingredients as $ingredient)
                             <li>{{$ingredient->name}}</li>
                         @endforeach--}}

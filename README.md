@@ -1,24 +1,23 @@
-# Codana - Hack the Future 2022
-**Setup project**
+# Codana - Hack the Future 2022 Challenge
+## Group: Department of Variety Gaming
+Our submission for the Codana Hack The Future 2022 challenge.
 
-Kies een omgeving naar keuze.
-Voorbeelden omgeving:
-- Mac: valet https://laravel.com/docs/9.x/valet
-- Windows: https://laravel.com/docs/9.x/homestead
+## Working features:
+Web:
+- create potions using ingrediants & other potions  
+- exploding cauldron when wrong potion is made
 
-Om dit project op te zetten voer je volgende commando's uit
+Api:
+- add ingrediants
+- get ingrediants
+- add potion
+- get potions
 
-    composer install
-    npm install
-    npm run build
-Om jullie wat werk te besparen hebben wij al wat blanco entiteiten klaargezet, het is aan jullie om dit aan te vullen met de nodige logica (zie TODO comments in code):
-- Ingredient:
-    - Model
-    - Migration
-    - Controller
-- Potion
-    - Model
-    - Migration
-    - Controller
+Todo:
+- remove brewed potions button
 
-![Codana](https://hack-the-future.pages.codana.dev/hack-the-future-2022/Codana-PURPLE-RGB-logo-simple.png)
+Api spec:  
+There is a postman collection in this repository showcasing the requests.
+
+
+

@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "6404507c-afa4-4728-a23d-d0b89bf3bba5",
+		"name": "Hack The Future 2022 - Department Of Variety Gaming",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14735995"
+	},
+	"item": [
+		{
+			"name": "http://htf2022.local/api/ingredients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"a test ingredient\",\n    \"description\":\"a test ingredient\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://htf2022.local/api/ingredients",
+					"protocol": "http",
+					"host": [
+						"htf2022",
+						"local"
+					],
+					"path": [
+						"api",
+						"ingredients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://htf2022.local/api/ingredients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://htf2022.local/api/ingredients",
+					"protocol": "http",
+					"host": [
+						"htf2022",
+						"local"
+					],
+					"path": [
+						"api",
+						"ingredients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://htf2022.local/api/potions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://htf2022.local/api/potions",
+					"protocol": "http",
+					"host": [
+						"htf2022",
+						"local"
+					],
+					"path": [
+						"api",
+						"potions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://htf2022.local/api/potions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ingredients\":[\n        {\"id\": 2, \"is_potion\":false},\n        {\"id\": 2, \"is_potion\":false},\n        {\"id\":3, \"is_potion\":false}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://htf2022.local/api/potions/create",
+					"protocol": "http",
+					"host": [
+						"htf2022",
+						"local"
+					],
+					"path": [
+						"api",
+						"potions",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

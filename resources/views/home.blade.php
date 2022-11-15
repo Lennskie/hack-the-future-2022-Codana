@@ -38,6 +38,7 @@
             <div class="col2">
                 <h2>Make your potion!</h2>
                 <img src="{{asset('img/cauldron.gif')}}" alt="cauldron" class="cauldron"/>
+                <button class=button>Add to potion!</button>
             </div>
 
             <div class="col3">
